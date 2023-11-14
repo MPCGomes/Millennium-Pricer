@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Millennium Price Helper",
+    "version": "0.1",
+    "description": "Enhances Liga Yugioh and MYP Cards with new price calculator and comparison features.",
+    "content_scripts": [
+        {
+            "matches": ["https://mypcards.com/outros/*"],
+            "css": ["scripts/mypStyle.css"],
+            "js": ["scripts/mypScript.js"]
+        },
+        {
+            "matches": ["https://www.ligayugioh.com.br/*"],
+            "css": ["scripts/ligaStyle.css"],
+            "js": ["scripts/ligaScript.js"]
+        }
+    ],
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+      }
+  }
