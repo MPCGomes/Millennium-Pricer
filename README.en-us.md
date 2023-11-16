@@ -1,5 +1,4 @@
-_Return to Language Selection._
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.md)
+[_Return to Language Selection._](https://github.com/MPCGomes/Millennium-Price-Helper/blob/main/README.md)
 
 # Millennium Price Helper
 

@@ -1,5 +1,4 @@
-_Retornar ao seletor de idiomas._
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/jonatasemidio/multilanguage-readme-pattern/blob/master/README.md)
+[_Retornar ao Seletor de Idiomas._](https://github.com/MPCGomes/Millennium-Price-Helper/blob/main/README.md)
 
 # Millennium Price Helper
 
