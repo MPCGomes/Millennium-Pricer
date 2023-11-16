@@ -1,24 +1,42 @@
 {
     "manifest_version": 3,
     "name": "Millennium Price Helper",
-    "version": "0.1",
+    "version": "1.0",
     "description": "Enhances Liga Yugioh and MYP Cards with new price calculator and comparison features.",
     "permissions": ["activeTab"],
     "content_scripts": [
+      {
+        "matches": ["https://mypcards.com/outros/*"],
+        "css": ["scripts/priceStyles.css"],
+        "js": ["scripts/mypMultiCardScript.js"]
+      },
+      {
+        "matches": ["https://www.ligayugioh.com.br/*"],
+        "css": ["scripts/ligaStyle.css"],
+        "js": ["scripts/ligaScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
         {
-            "matches": ["https://mypcards.com/outros/*"],
-            "js": ["scripts/mypScript.js"]
+          "resources": ["images/mypLogo.svg"],
+          "matches": [
+            "https://mypcards.com/*",
+            "https://www.ligayugioh.com.br/*"
+        ]
         },
         {
-            "matches": ["https://www.ligayugioh.com.br/*"],
-            "css": ["scripts/ligaStyle.css"],
-            "js": ["scripts/ligaScript.js"]
+          "resources": ["images/tcgLogo.svg"],
+          "matches": [
+            "https://mypcards.com/*",
+            "https://www.ligayugioh.com.br/*"
+        ]
         }
-    ],
+      ],
     "icons": {
-        "16": "images/icon-16.png",
-        "32": "images/icon-32.png",
-        "48": "images/icon-48.png",
-        "128": "images/icon-128.png"
-      }
-  }
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    }
+}
+  

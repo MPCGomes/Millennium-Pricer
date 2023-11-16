@@ -1,47 +1,95 @@
 # Millennium Price Helper
 
 ## Software Introduction
-Millennium Price Helper is a browser extension developed for MYP Cards, an online card game marketplace. It aims to streamline its user experience by enhancing its navigation and deal visibility.
+Millennium Price Helper is a browser extension developed for MYP Cards, an online card game marketplace. It enhances user experience by easing access to valuable pricing information and providing better deal visibility.
 
 ## Observed Problem
-MYP Cards features a functionality that displays the cumulative price of all cards in each deck on their listing pages. However, this resource is limited to a specific section of the platform and is not integrated into the default search and shopping mechanisms. As a result, many users remain unaware of it, potentially missing out on advantageous deals.
+Although MYP Cards displays the cumulative price of individual cards in a deck on its listing page, this feature is limited to a specific section of the platform, which is not integrated into the default search and shopping mechanisms. Consequently, many users remain unaware of it, potentially leading to unfavorable deals.
 
 ## Proposed Solution
-Millennium Price Helper addresses this issue by redirecting users from areas where the pricing feature is absent to where it is available, thereby saving time and providing better pricing perceptibility.
+To address this, Millennium Price Helper calculates and displays the cumulative price of all individual cards in a deck on its listing page, without that section limitation. This not only improves pricing transparency but also empowers users with comprehensive pricing insights, facilitating more informed purchasing decisions.
 
 ### Technologies Used
-The extension employs several key technologies, each serving a distinct role in its functionality:
+Millennium Price Helper employs several key technologies, each serving a distinct role in its functionality:
 
-**• JavaScript:** This is the primary language used for building the extension. It enables the core functionality of the app, such as event handling, redirection, and dynamic interaction with the web pages of MYP Cards. JavaScript is essential in implementing the logic for detecting when a user is viewing a specific part of the site and needs redirection to access enhanced features. <br />
+**• JavaScript:** JavaScript is a programming language used to create interactive and dynamic web pages. In mypMultiCardScript.js, it's used to dynamically calculate and display prices, allowing interaction with web page content, such as reading element attributes and updating the DOM.
 
 ```javascript
-document.addEventListener('DOMContentLoaded', function() {
-    // JavaScript code...
+productDetails.forEach(card => {
+    // JavaScript operations with DOM elements
 });
 ```
 
-**• DOM Manipulation:** The extension uses Document Object Model (DOM) manipulation to interact with the web pages. This includes identifying specific elements like deck views or product numbers, and modifying the page content or structure in response to user actions or as part of the extension's core features. <br />
+**• DOM Manipulation:** DOM (Document Object Model) Manipulation involves interacting with and changing the structure and content of a webpage dynamically. In the script, document.getElementById('deck-view') is used to identify and interact with specific elements on the webpage.
 
 ```javascript
-const isDeck = document.getElementById('deck-view');
+const isMultiCardProduct = document.getElementById('deck-view');
 ```
 
-**• Regular Expressions (RegEx):** Used for pattern matching and string manipulation, RegEx helps in extracting relevant information from the webpage, such as product numbers from class names. This is crucial for the functionality that identifies specific products or decks on MYP Cards and redirects users appropriately. <br />
+**• Query Selectors:** Query selectors are methods in JavaScript for selecting elements from the DOM based on specified patterns. They allow efficient retrieval of elements for processing, as demonstrated by isMultiCardProduct.querySelectorAll('a').
 
 ```javascript
-const productNumber = findProductNumber.className.match(/deck-card-link-(\d+)/);
+const productDetails = isMultiCardProduct.querySelectorAll('a');
 ```
 
-**• Web APIs:** The extension utilizes various Web APIs, with a particular focus on the Window API. This is used to manipulate browser behavior, such as redirecting users to different URLs within MYP Cards, thereby enhancing the user's navigational experience and providing quicker access to pricing information. <br />
+**• Event-Driven Programming:** Event-Driven Programming in JavaScript involves writing code that responds to events like user interactions or page loads. The script uses this approach to execute logic such as price calculation at appropriate times.
 
 ```javascript
-window.location.href = `https://mypcards.com/deck/${number}/`;
+(() => { ... })(); // Immediately-invoked function expression (IIFE)
+```
+
+**• JSON (JavaScript Object Notation):**
+JSON is a lightweight data-interchange format. In manifest.json, it's used for specifying extension settings such as which scripts to run, permissions needed, and resource locations.
+
+```javascript
+"content_scripts": [
+  {
+    "matches": ["https://mypcards.com/outros/*"]
+    // Other JSON configuration settings
+  }
+],
+```
+
+**• Chrome Extension APIs:** Chrome Extension APIs provide functionalities specific to the Chrome browser. The script uses these APIs, like chrome.runtime.getURL, to access and utilize browser-specific features.
+
+```javascript
+logoSvg.src = chrome.runtime.getURL(logoUrl);
+```
+
+**• CSS Integration:** CSS (Cascading Style Sheets) is used for styling web pages. The script integrates CSS to style elements created by JavaScript, ensuring they match the webpage's visual design.
+
+```javascript
+"css": ["scripts/priceStyles.css"]
 ```
 
 ### Installation and Usage
-Work in Progress. This section will cover detailed steps for installation and guides for using the extension effectively.
+_Work in Progress._
+To install and start using Millennium Price Helper, follow the following steps to integrate it into your Chrome browser.
+
+> [!NOTE]
+> The following installation steps are for loading the extension in Developer Mode. This process is typically used for testing and development purposes. Once Millennium Price Helper is available on the Chrome Web Store, installation will be streamlined through the store.
+
+1. **Download the Extension:** Navigate to the GitHub repository or the provided link for Millennium Price Helper. Look for a button or link labeled 'Code' and select 'Download ZIP' from the dropdown options.
+
+2. **Extract the ZIP File:** Once the ZIP file is downloaded, locate it on your computer (usually in the Downloads folder) and extract it. You can do this by right-clicking on the ZIP file and choosing 'Extract All...' or using your preferred extraction tool.
+
+3. **Open Chrome Extensions Page:** Launch your Google Chrome browser and enter chrome://extensions/ into the address bar. This action will take you to the Chrome Extensions management page.
+
+4. **Enable Developer Mode:** On the top right of the Chrome Extensions page, find and enable 'Developer Mode'. This allows you to load unpacked extensions.
+
+5. **Load the Unpacked Extension:** Click on 'Load unpacked' and navigate to the extracted folder of Millennium Price Helper. Select the folder to load it into Chrome.
+
+6. **Extension Ready to Use:** Once the extension is loaded, you will see it listed among your Chrome extensions. It's now ready for use on supported websites.
 
 ## Future Plans
-Future updates will introduce price comparisons for individual cards from two additional major online card game marketplaces on MYP Cards, and vice-versa. This will allow users to compare prices across multiple platforms, ensuring they find the most cost-effective options.
+In upcoming updates, Millennium Price Helper will enhance its cross-platform comparison capabilities:
+
+**• MYP Cards:** Display individual card prices from Cardmarket and Liga Yugioh, two other major online card game marketplace, on their respective listing pages on MYP Cards.
+
+**• Liga Yugioh:** Show individual card prices from Cardmarket, MYP Cards and TCG Prices, another major online card game marketplace, on their respective listing pages on Liga Yugioh.
+
+These enhancements are designed to empower users even more with additional price comparison options, enabling them to make more informed purchasing decisions by providing access to a wide range of pricing options across multiple leading online card game marketplaces.
+
+Millennium Price Helper aims to ensure that users can find the most cost-effective and suitable options for their needs.
 
 _The extension is currently available for Google Chrome and is free to use._

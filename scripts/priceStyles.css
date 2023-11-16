@@ -1,0 +1,14 @@
+/* priceStyles.css */
+
+.priceContainer {
+    display: flex;
+    align-items: center;
+}
+
+.priceContainer img {
+    margin-right: 5px;
+}
+
+.mypPrice, .tcgPrice {
+    font-weight: bolder;
+}
