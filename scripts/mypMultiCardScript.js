@@ -19,12 +19,22 @@
     const precoDiv = document.querySelector('.preco');
     if (!precoDiv) return;
 
+    function getURL(resource) {
+        if (typeof browser !== 'undefined') {
+            return browser.runtime.getURL(resource);
+        } else if (typeof chrome !== 'undefined') {
+            return chrome.runtime.getURL(resource);
+        } else {
+            return resource;
+        }
+    }
+
     function createPriceContainer(logoUrl, title, price, className) {
         const container = document.createElement('div');
         container.className = 'priceContainer';
 
         const logoSvg = document.createElement('img');
-        logoSvg.src = chrome.runtime.getURL(logoUrl);
+        logoSvg.src = getURL(logoUrl);
         logoSvg.className = 'logoSvg';
 
         const priceSpan = document.createElement('span');
