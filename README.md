@@ -1,8 +1,14 @@
 # Millennium Price Helper
-:usa: This project aims to provide comprehensive pricing guidance in various contexts. Find detailed information and resources in your preferred language.
 
-:brazil: Este projeto visa fornecer orientação abrangente de preços em vários contextos. Encontre informações detalhadas e recursos no seu idioma preferido.
+## English
+Millennium Price Helper enhances card price visibility on MYP Cards, an online card game marketplace, catering enthusiats, players, collectors and shops. This project aims to aid its users with their purchase decisions within MYP Cards, by providing cross-platform price comparisons.
 
-Languages/Idiomas </br>
-English 🇺🇸: [Read the README in English](https://github.com/MPCGomes/Millennium-Price-Helper/blob/main/README.en-us.md). </br>
-Português Brasileiro 🇧🇷: [Leia o README em Português Brasileiro](https://github.com/MPCGomes/Millennium-Price-Helper/blob/main/README.pt-br.md).
+[Read the README in English](https://github.com/MPCGomes/Millennium-Price-Helper/blob/main/README.en-us.md).
+
+## Português Brasileiro
+Millennium Price Helper aprimora a visibilidade dos preços dos cartões em MYP Cards, um mercado de jogos de cartas online, atendendo entusiastas, jogadores, colecionadores e lojas. Este projeto visa auxiliar seus usuários nas decisões de compra dentro de MYP Cards, fornecendo comparações de preços entre plataformas.
+
+[Leia o README em Português Brasileiro](https://github.com/MPCGomes/Millennium-Price-Helper/blob/main/README.pt-br.md).
+
+
+
