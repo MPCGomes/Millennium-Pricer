@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Millennium Price Helper",
     "version": "1.0",
-    "description": "Enhances Liga Yugioh and MYP Cards with new price calculator and comparison features.",
+    "description": "Enhances MYP Cards with new price calculator and comparison features for smarter purchasing decisions.",
     "permissions": ["activeTab"],
     "content_scripts": [
       {

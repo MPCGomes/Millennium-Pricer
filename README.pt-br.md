@@ -9,7 +9,7 @@ Millennium Price Helper é uma extensão de navegador desenvolvida para MYP Card
 Embora MYP Cards mostre o preço cumulativo de cartas individuais em um deck na sua página de listagem, esta funcionalidade é limitada a uma seção específica da plataforma, que não está integrada aos mecanismos padrão de busca e compra. Consequentemente, muitos usuários não têm conhecimento dela, o que pode levar a negócios desfavoráveis.
 
 ## Solução Proposta
-Para resolver isso, Millennium Price Helper calcula e exibe o preço cumulativo de todas as cartas individuais em um deck em sua página de listagem, sem a limitação dessa seção. Isso não só melhora a transparência dos preços, mas também empodera os usuários com insights abrangentes de preços, facilitando decisões de compra mais informadas.
+Para resolver isso, Millennium Price Helper calcula e exibe o preço cumulativo de todas as cartas individuais em um deck em sua página de listagem, sem a limitação dessa seção. Isso não só melhora a transparência dos preços, mas também empodera os usuários com insights abrangentes de preços, facilitando decisões de compra mais inteligentes.
 
 ### Tecnologias Utilizadas
 Millennium Price Helper emprega várias tecnologias-chave, cada uma desempenhando um papel distinto em sua funcionalidade:
