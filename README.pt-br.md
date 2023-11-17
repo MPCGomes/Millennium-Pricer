@@ -94,4 +94,5 @@ Esses aprimoramentos são projetados para capacitar ainda mais os usuários com 
 
 O objetivo do Millennium Price Helper é garantir que os usuários possam encontrar as opções mais econômicas e adequadas às suas necessidades.
 
-_A extensão está atualmente disponível para o Google Chrome e é gratuita para uso._
+> [!NOTE]
+> Millennium Price Helper é uma extensão gratuita sem fins lucrativos, disponível para Google Chrome, Mozilla Firefox, Opera GX e Microsoft Edge.
