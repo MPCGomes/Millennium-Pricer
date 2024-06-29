@@ -1,5 +1,6 @@
-
 # Millennium Pricer
+
+[![Português](https://img.shields.io/badge/lang-portuguese-green.svg)](README_pt-br.md)
 
 ## Overview
 
@@ -22,59 +23,60 @@ Millennium Pricer is a Google Chrome extension designed to enhance the user expe
 
 ## How to Install and Use
 
-1. Clone the repository:
+1. **Clone the repository**:
     ```sh
     git clone https://github.com/yourusername/millennium-pricer.git
     ```
 
-2. Navigate to the project directory:
+2. **Navigate to the project directory**:
     ```sh
     cd millennium-pricer
     ```
 
-3. Install dependencies:
+3. **Install dependencies**:
     ```sh
     npm install
     ```
 
-4. Build the project (if needed):
+4. **Build the project (if needed)**:
     ```sh
     npm run build
     ```
 
-5. Load the extension in Google Chrome:
-    1. Open Chrome and navigate to `chrome://extensions/`.
-    2. Enable "Developer mode" using the toggle in the top right corner.
-    3. Click on the "Load unpacked" button.
-    4. Select the project directory.
+5. **Load the extension in Google Chrome**:
+    - Open Chrome and navigate to `chrome://extensions/`.
+    - Enable "Developer mode" using the toggle in the top right corner.
+    - Click on the "Load unpacked" button.
+    - Select the project directory.
 
 6. The extension is now installed and ready to use on the MYPCards and LigaYugioh websites.
 
 ## Project Structure
 
 ```
-src/
-├── ligayugioh/
-│   ├── main.js
-│   └── utils/
-│       ├── fetchCardPrices.js
-│       └── setupCardPriceDisplay.js
-├── mypcards/
-│   ├── main.js
-│   └── utils/
-│       ├── createPriceContainer.js
-│       ├── displayTotalPrices.js
-│       └── getURL.js
-styles/
-├── priceStyles.css
-images/
-├── icon-16.png
-├── icon-32.png
-├── icon-48.png
-├── icon-128.png
-├── mypLogo.svg
-└── tcgLogo.svg
-manifest.json
+.
+├── /src
+│   ├── /ligayugioh
+│   │   ├── main.js
+│   │   └── /utils
+│   │       ├── fetchCardPrices.js
+│   │       └── setupCardPriceDisplay.js
+│   ├── /mypcards
+│   │   ├── main.js
+│   │   └── /utils
+│   │       ├── createPriceContainer.js
+│   │       ├── displayTotalPrices.js
+│   │       └── getURL.js
+│   ├── /styles
+│   │   └── priceStyles.css
+│   ├── /images
+│   │   ├── icon-16.png
+│   │   ├── icon-32.png
+│   │   ├── icon-48.png
+│   │   ├── icon-128.png
+│   │   ├── mypLogo.svg
+│   │   └── tcgLogo.svg
+│   └── manifest.json
 ```
 
 ## License
