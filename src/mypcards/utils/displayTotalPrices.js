@@ -1,8 +1,13 @@
 import { createPriceContainer } from "./createPriceContainer.js";
 
 export function displayTotalPrices() {
+  console.log("Display total prices called");
+
   const multiCardProductElement = document.getElementById("deck-view");
-  if (!multiCardProductElement) return;
+  if (!multiCardProductElement) {
+    console.log("Multi-card product element not found");
+    return;
+  }
 
   let totalMypPrice = 0;
   let totalTcgPrice = 0;
@@ -21,9 +26,13 @@ export function displayTotalPrices() {
       card.getAttribute("data-price-tcg")?.replace(",", ".") || "0"
     );
 
+    console.log(`Card: ${card.textContent}, Quantity: ${cardQuantity}, MYP Price: ${cardMypPrice}, TCG Price: ${cardTcgPrice}`);
+
     totalMypPrice += cardQuantity * cardMypPrice;
     totalTcgPrice += cardQuantity * cardTcgPrice;
   });
+
+  console.log(`Total MYP Price: ${totalMypPrice}, Total TCG Price: ${totalTcgPrice}`);
 
   const priceDiv = document.querySelector(".price");
   if (!priceDiv) return;

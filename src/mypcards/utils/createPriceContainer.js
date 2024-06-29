@@ -1,6 +1,8 @@
 import { getURL } from "./getURL.js";
 
 export function createPriceContainer(logoUrl, title, price, className) {
+  console.log(`Creating price container for ${title} with price ${price}`);
+
   const container = document.createElement("div");
   container.className = "priceContainer";
 
