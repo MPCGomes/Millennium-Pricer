@@ -1,14 +1,82 @@
-# Millennium Price Helper
 
-## English
-Millennium Price Helper enhances card price visibility on MYP Cards, an online card game marketplace, catering enthusiats, players, collectors and shops. This project aims to aid its users with their purchase decisions within MYP Cards, by providing cross-platform price comparisons.
+# Millennium Pricer
 
-[Read the README in English](https://github.com/MPCGomes/Millennium-Price-Helper/blob/main/README.en-us.md).
+## Overview
 
-## Português Brasileiro
-Millennium Price Helper aprimora a visibilidade dos preços dos cartões em MYP Cards, um mercado de jogos de cartas online, atendendo entusiastas, jogadores, colecionadores e lojas. Este projeto visa auxiliar seus usuários nas decisões de compra dentro de MYP Cards, fornecendo comparações de preços entre plataformas.
+Millennium Pricer is a Google Chrome extension designed to enhance the user experience on MYPCards and LigaYugioh websites. It provides users with real-time price calculations, comparisons between different card vendors, and currency conversion to help make informed purchasing decisions.
 
-[Leia o README em Português Brasileiro](https://github.com/MPCGomes/Millennium-Price-Helper/blob/main/README.pt-br.md).
+## Features
 
+- **Currency Conversion**: Fetches the latest USD to BRL and EUR to BRL exchange rates for accurate price conversions.
+- **Modular and Scalable Code**: Organized and modular code structure, making it easy to maintain and extend functionality.
+- **Price Comparison on LigaYugioh**: Displays card prices in USD and BRL based on the latest TCGPlayer and Cardmarket data, and converts prices to the user's local currency for better understanding.
+- **Real-time Price Calculation**: Automatically calculates the total price of cards in your deck on MYPCards and provides a comparison between MYPCards prices and TCGPlayer prices.
+- **Uses Axios for API Requests**: Efficient and reliable API requests using Axios.
 
+## Technologies Used
 
+- **Axios**: Used for making API requests to fetch exchange rates and card prices.
+- **Google Chrome Extension API**: Utilized to integrate the extension with the Chrome browser and interact with web pages.
+- **HTML & CSS**: Structure and styling of the extension's UI components.
+- **JavaScript**: The primary programming language used for the extension's functionality.
+
+## How to Install and Use
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/millennium-pricer.git
+    ```
+
+2. Navigate to the project directory:
+    ```sh
+    cd millennium-pricer
+    ```
+
+3. Install dependencies:
+    ```sh
+    npm install
+    ```
+
+4. Build the project (if needed):
+    ```sh
+    npm run build
+    ```
+
+5. Load the extension in Google Chrome:
+    1. Open Chrome and navigate to `chrome://extensions/`.
+    2. Enable "Developer mode" using the toggle in the top right corner.
+    3. Click on the "Load unpacked" button.
+    4. Select the project directory.
+
+6. The extension is now installed and ready to use on the MYPCards and LigaYugioh websites.
+
+## Project Structure
+
+```
+src/
+├── ligayugioh/
+│   ├── main.js
+│   └── utils/
+│       ├── fetchCardPrices.js
+│       └── setupCardPriceDisplay.js
+├── mypcards/
+│   ├── main.js
+│   └── utils/
+│       ├── createPriceContainer.js
+│       ├── displayTotalPrices.js
+│       └── getURL.js
+styles/
+├── priceStyles.css
+images/
+├── icon-16.png
+├── icon-32.png
+├── icon-48.png
+├── icon-128.png
+├── mypLogo.svg
+└── tcgLogo.svg
+manifest.json
+```
+
+## License
+
+This project is licensed under the MIT License.

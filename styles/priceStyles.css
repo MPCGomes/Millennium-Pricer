@@ -1,0 +1,37 @@
+.priceContainer {
+  display: flex;
+  align-items: center;
+}
+
+.priceContainer img {
+  margin-right: 5px;
+}
+
+.mypPrice,
+.tcgPrice {
+  font-weight: bolder;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.col-title,
+.col-spacer,
+.col-price-usd,
+.col-price-brl {
+  margin-right: 10px;
+}
+
+.price-title {
+  font-weight: bold;
+}
+
+.spacer {
+  width: 5px;
+  height: 5px;
+  background-color: gray;
+  border-radius: 50%;
+}

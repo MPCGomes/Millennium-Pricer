@@ -1,42 +1,35 @@
 {
-    "manifest_version": 3,
-    "name": "Millennium Price Helper",
-    "version": "1.0",
-    "description": "Enhances MYP Cards with new price calculator and comparison features for smarter purchasing decisions.",
-    "permissions": ["activeTab"],
-    "content_scripts": [
-      {
-        "matches": ["https://mypcards.com/outros/*"],
-        "css": ["scripts/priceStyles.css"],
-        "js": ["scripts/mypMultiCardScript.js"]
-      },
-      {
-        "matches": ["https://www.ligayugioh.com.br/*"],
-        "css": ["scripts/ligaStyle.css"],
-        "js": ["scripts/ligaScript.js"]
-      }
-    ],
-    "web_accessible_resources": [
-        {
-          "resources": ["images/mypLogo.svg"],
-          "matches": [
-            "https://mypcards.com/*",
-            "https://www.ligayugioh.com.br/*"
-        ]
-        },
-        {
-          "resources": ["images/tcgLogo.svg"],
-          "matches": [
-            "https://mypcards.com/*",
-            "https://www.ligayugioh.com.br/*"
-        ]
-        }
-      ],
-    "icons": {
-      "16": "images/icon-16.png",
-      "32": "images/icon-32.png",
-      "48": "images/icon-48.png",
-      "128": "images/icon-128.png"
+  "manifest_version": 3,
+  "name": "Millennium Pricer",
+  "version": "2.0.0",
+  "description": "Enhances MYPCards and LigaYugioh websites with real-time price calculations and comparisons for smarter purchasing decisions.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://mypcards.com/outros/*"],
+      "css": ["styles/priceStyles.css"],
+      "js": ["mypcards/main.js"]
+    },
+    {
+      "matches": ["https://www.ligayugioh.com.br/*"],
+      "css": ["styles/priceStyles.css"],
+      "js": ["ligayugioh/main.js"]
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/mypLogo.svg"],
+      "matches": ["https://mypcards.com/*", "https://www.ligayugioh.com.br/*"]
+    },
+    {
+      "resources": ["images/tcgLogo.svg"],
+      "matches": ["https://mypcards.com/*", "https://www.ligayugioh.com.br/*"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  }
 }
-  
