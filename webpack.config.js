@@ -8,6 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
+    publicPath: "/",
   },
   module: {
     rules: [
@@ -19,6 +20,13 @@ module.exports = {
           options: {
             presets: ["@babel/preset-env"],
           },
+        },
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[name][ext]",
         },
       },
     ],
