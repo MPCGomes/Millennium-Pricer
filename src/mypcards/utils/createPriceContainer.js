@@ -1,4 +1,4 @@
-import { getURL } from "./getURL.js";
+import { getURL } from "./getURL";
 
 export function createPriceContainer(logoUrl, title, price, className) {
   const container = document.createElement("div");
