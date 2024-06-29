@@ -1,6 +1,6 @@
-# Millennium Pricer
-
 [![Português](https://img.shields.io/badge/lang-portuguese-green.svg)](README_pt-br.md)
+
+# Millennium Pricer
 
 ## Overview
 
