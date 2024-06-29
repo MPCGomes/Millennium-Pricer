@@ -1,4 +1,4 @@
-import { setupCardPriceDisplay } from "./utils/setupCardPriceDisplay";
+import { setupCardPriceDisplay } from "./utils/setupCardPriceDisplay.js";
 
 function initializeLigaYugiohExtension() {
   window.addEventListener("load", async () => {

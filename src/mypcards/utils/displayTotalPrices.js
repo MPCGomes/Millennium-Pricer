@@ -1,4 +1,4 @@
-import { createPriceContainer } from "./createPriceContainer";
+import { createPriceContainer } from "./createPriceContainer.js";
 
 export function displayTotalPrices() {
   const multiCardProductElement = document.getElementById("deck-view");

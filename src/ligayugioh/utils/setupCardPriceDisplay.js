@@ -1,4 +1,4 @@
-import { fetchCardPrices } from "./fetchCardPrices";
+import { fetchCardPrices } from "./fetchCardPrices.js";
 
 export async function setupCardPriceDisplay(cardName) {
   const { card_prices, dollarRate, euroRate } = await fetchCardPrices(cardName);

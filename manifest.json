@@ -8,12 +8,14 @@
     {
       "matches": ["https://mypcards.com/outros/*"],
       "css": ["styles/priceStyles.css"],
-      "js": ["src/mypcards/main.js"]
+      "js": ["src/mypcards/main.js"],
+      "type": "module"
     },
     {
       "matches": ["https://www.ligayugioh.com.br/*"],
       "css": ["styles/priceStyles.css"],
-      "js": ["src/ligayugioh/main.js"]
+      "js": ["src/ligayugioh/main.js"],
+      "type": "module"
     }
   ],
   "web_accessible_resources": [
