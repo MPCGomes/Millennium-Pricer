@@ -33,10 +33,10 @@ Millennium Pricer is a Google Chrome extension designed to enhance the user expe
 
 2. **Load the extension in Google Chrome**:
 
-   1. Open Chrome and navigate to `chrome://extensions/`.
-   2. Enable "Developer mode" using the toggle in the top right corner.
-   3. Click on the "Load unpacked" button.
-   4. Select the project directory.
+   - Open Chrome and navigate to `chrome://extensions/`.
+   - Enable "Developer mode" using the toggle in the top right corner.
+   - Click on the "Load unpacked" button.
+   - Select the project directory.
 
 3. The extension is now installed and ready to use on the MYPCards and LigaYugioh websites.
 
