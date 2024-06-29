@@ -11,7 +11,7 @@
 ### Alterado
 - Estrutura do projeto atualizada para melhor manutenção.
 
-## [v1.0.0] - 25-06-2024
+## [v1.0.0] - 25-10-2023
 
 ### Adicionado
 - Lançamento inicial do Millennium Pricer.

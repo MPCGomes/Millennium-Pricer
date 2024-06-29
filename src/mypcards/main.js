@@ -1,4 +1,4 @@
-import { displayTotalPrices } from "./utils/displayTotalPrices";
+import { displayTotalPrices } from "./utils/displayTotalPrices.js";
 
 function initializeMypcardsExtension() {
   displayTotalPrices();
