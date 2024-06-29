@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Millennium Pricer",
-  "version": "2.1.0",
+  "version": "2.0.0",
   "description": "Enhances MYPCards and LigaYugioh websites with real-time price calculations and comparisons for smarter purchasing decisions.",
   "permissions": ["activeTab"],
   "content_scripts": [
