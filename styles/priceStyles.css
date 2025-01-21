@@ -1,11 +1,12 @@
 .priceContainer {
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 
 .logoImage {
-  margin-right: 15px;
-  width: 30px;
+  margin-right: 10px;
+  width: 20px;
   height: auto;
 }
 
@@ -20,22 +21,4 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-}
-
-.col-title,
-.col-spacer,
-.col-price-usd,
-.col-price-brl {
-  margin-right: 10px;
-}
-
-.price-title {
-  font-weight: bold;
-}
-
-.spacer {
-  width: 5px;
-  height: 5px;
-  background-color: gray;
-  border-radius: 50%;
 }

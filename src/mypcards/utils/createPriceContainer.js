@@ -12,6 +12,5 @@ export function createPriceContainer(logoUrl, title, price, className) {
   priceSpan.textContent = `R$ ${price.toFixed(2).replace(".", ",")}`;
 
   container.append(logoImage, priceSpan);
-
   return container;
 }
